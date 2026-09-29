@@ -6,37 +6,63 @@
 <title>Medicine Enquiry | Medilink Exports</title>
 <meta name="description" content="Submit your pharmaceutical medicine requirement to Medilink Exports.">
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#f4f8fb,#eef4f8);color:#1f2937}
-.page{padding:30px 15px 50px}.container{max-width:900px;margin:auto}
-.card{background:#fff;border:1px solid #e5eaf0;border-radius:18px;padding:30px;box-shadow:0 8px 30px rgba(0,0,0,.07);margin-bottom:22px}
-.brand{display:flex;align-items:center;gap:15px;margin-bottom:20px}.logo{width:58px;height:58px;border-radius:14px;background:linear-gradient(135deg,#0b6e99,#1596c7);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:21px}
-.brand-name{font-size:27px;font-weight:700;color:#123b52}.tag{font-size:13px;color:#6b7280;margin-top:4px}
-.intro{border-top:1px solid #edf0f3;padding-top:18px}h1{font-size:25px;color:#123b52;margin:0 0 10px}p{font-size:15px;line-height:1.7;color:#5b6673}a{color:#0b6e99;text-decoration:none;font-weight:600}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#f3f8fb,#eef4f8);color:#1f2937}
+.page{padding:28px 15px 50px}.container{max-width:940px;margin:auto}
+.card{background:#fff;border:1px solid #e3e9ef;border-radius:20px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,.07);margin-bottom:22px}
+.brand{text-align:center;padding:4px 0 20px}.logo-img{display:block;width:min(270px,70%);height:auto;max-height:155px;object-fit:contain;margin:0 auto 8px}
+.brand-name{font-size:25px;font-weight:700;color:#123b52}.tag{font-size:13px;color:#6b7280;margin-top:4px}
+.hero-banner{width:100%;height:auto;display:block;border-radius:14px;border:1px solid #e5eaf0;background:#fff;margin:4px auto 24px}
+.intro{border-top:1px solid #edf0f3;padding-top:20px}
+h1{font-size:25px;color:#123b52;margin:0 0 10px}
+p{font-size:15px;line-height:1.7;color:#5b6673}
+a{color:#0b6e99;text-decoration:none;font-weight:600}
+.contact-line{font-size:14px;margin-bottom:0}
 .title{font-size:21px;font-weight:700;color:#123b52;margin-bottom:7px}.sub{font-size:14px;color:#737b86;margin-bottom:25px}
 .section{font-size:15px;font-weight:700;color:#0b6e99;margin:22px 0 14px;padding-bottom:8px;border-bottom:1px solid #e7edf1}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.full{grid-column:1/-1}label{font-size:13px;font-weight:600;color:#374151;margin-bottom:7px;display:block}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.full{grid-column:1/-1}
+label{font-size:13px;font-weight:600;color:#374151;margin-bottom:7px;display:block}
 .req{color:#d12c2c}.opt{color:#8a929b;font-size:12px;font-weight:400}
-input,textarea{width:100%;border:1px solid #d7dee5;border-radius:9px;padding:12px 13px;font-size:14px;outline:none}input:focus,textarea:focus{border-color:#1596c7;box-shadow:0 0 0 3px rgba(21,150,199,.1)}textarea{min-height:110px;resize:vertical}
-button{width:100%;border:0;border-radius:10px;padding:14px 20px;background:linear-gradient(135deg,#0b6e99,#1596c7);color:#fff;font-size:16px;font-weight:700;cursor:pointer;margin-top:25px}button:disabled{opacity:.65;cursor:not-allowed}.submit-status{text-align:center;font-size:13px;line-height:1.6;color:#667085;margin-top:12px;min-height:21px}.submit-status.processing{color:#0b6e99}.submit-status.slow{color:#7c5c00}
-.note,.footer{text-align:center;font-size:12px;color:#7c858f;line-height:1.7;margin-top:14px}.success{display:none;text-align:center}.success-icon{width:65px;height:65px;margin:0 auto 18px;border-radius:50%;background:#e7f6ed;color:#21864b;display:flex;align-items:center;justify-content:center;font-size:31px}.reference{display:inline-block;margin-top:18px;padding:11px 18px;border-radius:8px;background:#f1f7fa;color:#0b6e99;font-weight:700}
-.hidden{display:none!important}@media(max-width:650px){.page{padding:15px 10px 30px}.card{padding:22px 18px}.grid{grid-template-columns:1fr}.full{grid-column:auto}.brand-name{font-size:22px}h1{font-size:21px}}
+input,textarea{width:100%;border:1px solid #d7dee5;border-radius:9px;padding:12px 13px;font-size:14px;outline:none}
+input:focus,textarea:focus{border-color:#1596c7;box-shadow:0 0 0 3px rgba(21,150,199,.1)}
+textarea{min-height:110px;resize:vertical}
+button{width:100%;border:0;border-radius:10px;padding:14px 20px;background:linear-gradient(135deg,#0b6e99,#1596c7);color:#fff;font-size:16px;font-weight:700;cursor:pointer;margin-top:25px}
+button:disabled{opacity:.65;cursor:not-allowed}
+.submit-status{text-align:center;font-size:13px;line-height:1.6;color:#667085;margin-top:12px;min-height:21px}
+.submit-status.processing{color:#0b6e99}.submit-status.slow{color:#7c5c00}
+.note,.footer{text-align:center;font-size:12px;color:#7c858f;line-height:1.7;margin-top:14px}
+.success{display:none;text-align:center}.success-icon{width:65px;height:65px;margin:0 auto 18px;border-radius:50%;background:#e7f6ed;color:#21864b;display:flex;align-items:center;justify-content:center;font-size:31px}
+.reference{display:inline-block;margin-top:18px;padding:11px 18px;border-radius:8px;background:#f1f7fa;color:#0b6e99;font-weight:700}
+.hidden{display:none!important}
+@media(max-width:650px){
+  .page{padding:15px 10px 30px}.card{padding:20px 16px}.grid{grid-template-columns:1fr}.full{grid-column:auto}
+  .logo-img{width:min(250px,88%);max-height:145px}.brand-name{font-size:22px}h1{font-size:21px}
+  .hero-banner{border-radius:10px}
+}
 </style>
 </head>
 <body>
 <div class="page"><div class="container">
 
 <div class="card">
-  <div class="brand"><div class="logo">ME</div><div><div class="brand-name">Medilink Exports</div><div class="tag">Pharmaceutical Medicine Enquiries</div></div></div>
+  <div class="brand">
+    <img class="logo-img" src="medilink-logo.jpg" alt="Medilink Exports Logo">
+    <div class="brand-name">Medilink Exports</div>
+    <div class="tag">Pharmaceutical Medicine Enquiries</div>
+  </div>
+
+  <img class="hero-banner" src="medilink-banner.jpg" alt="Medilink Exports company banner">
+
   <div class="intro">
     <h1>Submit Your Medicine Requirement</h1>
     <p>Medilink Exports is based in India and supplies pharmaceutical medicines to customers worldwide. We assist customers with medicine requirements, product information and supply enquiries. Share your requirement with us and our sales team will review it and get back to you shortly.</p>
-    <p style="font-size:14px">
-Official Sales Contact:
-<a href="mailto:sales@medilinkexports.com">sales@medilinkexports.com</a>
-&nbsp; | &nbsp;
-WhatsApp / Phone:
-<a href="https://wa.me/919115992131" target="_blank" rel="noopener">+91 9115 992131</a>
-</p>
+    <p class="contact-line">
+      Official Sales Contact:
+      <a href="mailto:sales@medilinkexports.com">sales@medilinkexports.com</a>
+      &nbsp; | &nbsp;
+      WhatsApp / Phone:
+      <a href="https://wa.me/919115992131" target="_blank" rel="noopener">+91 9115 992131</a>
+    </p>
   </div>
 </div>
 
@@ -53,6 +79,7 @@ WhatsApp / Phone:
       <div><label>WhatsApp / Phone <span class="req">*</span></label><input type="tel" name="phone" required placeholder="+ Country Code Number"></div>
       <div class="full"><label>Email <span class="req">*</span></label><input type="email" name="email" required placeholder="your@email.com"></div>
     </div>
+
     <div class="section">Medicine Requirement</div>
     <div class="grid">
       <div class="full"><label>Medicine Name <span class="req">*</span></label><input name="medicine" required placeholder="Enter medicine name"></div>
@@ -60,14 +87,16 @@ WhatsApp / Phone:
       <div><label>Quantity Required <span class="opt">(Optional)</span></label><input name="quantity" placeholder="e.g. 500 tablets"></div>
       <div class="full"><label>Additional Requirement <span class="opt">(Optional)</span></label><textarea name="additional" placeholder="Please mention any additional requirement, specification or question."></textarea></div>
     </div>
+
     <button id="submitBtn" type="submit">Submit Medicine Enquiry</button>
-<div id="submitStatus" class="submit-status" aria-live="polite"></div>
+    <div id="submitStatus" class="submit-status" aria-live="polite"></div>
     <div class="note">Your enquiry will be reviewed by the Medilink Exports sales team.</div>
   </form>
 </div>
 
 <div class="card success" id="successBox">
-  <div class="success-icon">✓</div><h2 style="color:#123b52">Thank You!</h2>
+  <div class="success-icon">✓</div>
+  <h2 style="color:#123b52">Thank You!</h2>
   <p>Your medicine enquiry has been successfully received by <strong>Medilink Exports</strong>.<br><br>Our sales team will review your requirement and contact you shortly.</p>
   <div class="reference">Enquiry submitted successfully</div>
 </div>
@@ -79,6 +108,7 @@ Pharmaceutical Medicine Enquiries<br>
 &nbsp; | &nbsp;
 <a href="https://wa.me/919115992131" target="_blank" rel="noopener">+91 9115 992131</a>
 </div>
+
 </div></div>
 
 <script>
